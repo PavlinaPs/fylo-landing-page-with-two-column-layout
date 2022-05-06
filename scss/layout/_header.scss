@@ -1,0 +1,40 @@
+@use '../abstracts' as *;
+
+.landing__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.3rem;
+    padding: 0 2.3rem 0 2.5rem;
+
+    outline: 1px solid yellow;
+
+    @media (min-width: $desktop) {
+        margin-top: 6.2rem;
+        padding: 0 7.7rem 0 8.2rem;
+    }
+}
+
+.logo {
+    width: 8rem;
+    height: 100%;
+
+    @media (min-width: $desktop) {
+        width: 16.4rem;
+    }
+}
+
+.navigation {
+    @include flex-center;
+    flex-direction: row;
+    gap: 2.4rem;
+    margin-top:0.5rem;
+    font-size: $fs-nav-mobile;
+    font-weight: $fw-bold;
+
+    @media (min-width: $desktop) {
+        gap: 5.5rem;
+        margin-top: 0.2rem;
+        font-size: $fs-nav-desktop;
+    }
+}

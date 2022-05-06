@@ -1,0 +1,19 @@
+@use '../abstracts' as *;
+
+body {
+    @include flex-center;
+    
+    font-family: $ff-sans;
+    font-weight: $fw-regular;
+    font-size: $fs-normal-mobile;
+    color: $clr-very-dark-blue;
+}
+
+.landing {
+    width: 37.5rem;
+    outline: 1px solid red;
+
+    @media (min-width: $desktop) {
+        width: 144rem;
+    }
+}
