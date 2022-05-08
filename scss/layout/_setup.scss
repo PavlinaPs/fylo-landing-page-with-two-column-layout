@@ -3,10 +3,14 @@
 body {
     @include flex-center;
     
-    font-family: $ff-sans;
+    font-family: $ff-body;
     font-weight: $fw-regular;
     font-size: $fs-normal-mobile;
     color: $clr-very-dark-blue;
+
+    @media (min-width: $desktop) {
+        font-size: $fs-normal-desktop;
+    }
 }
 
 .landing {

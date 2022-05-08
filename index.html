@@ -8,7 +8,7 @@
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- font awesome -->
 
@@ -19,6 +19,7 @@
   
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
+  <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -42,17 +43,26 @@
       </nav>
     </header>
 
-  
-  
-  
+    <section class="landing__files">
+      <img class="files__img" src="./images/illustration-1.svg" alt="illustration">
 
-  All your files in one secure location, accessible anywhere.
+      <div class="files__text-container">
+        <h1 class="files__title"> All your files in one secure location, accessible anywhere.</h1>
 
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
+        <p class="files__text">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
 
-  Get Started
+        <form id="files-form" class="files__form-container" novalidate>
+
+          <input id="files-input" class="files__email" type="email" aria-label="enter email" placeholder="Enter your email...">
+          
+          <small class="files__error">Please check your email</small>
+
+          <button class="files__submit" type="submit">Get Started</button>
+        </form>
+      </div>
+
+    </section>
+  
 
   Stay productive, wherever you are
 
