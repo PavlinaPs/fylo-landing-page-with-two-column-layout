@@ -72,8 +72,13 @@ To see how you can add code snippets, see below:
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.access__email::placeholder {
+    
+    color: $clr-light-gray;
+    // vertical align 
+    transform: scale(0.7);
+    transform-origin: 0% 50%;
+
 }
 ```
 

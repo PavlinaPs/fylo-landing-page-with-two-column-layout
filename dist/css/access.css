@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+input {
+  font: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.landing__files {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 4rem;
+  grid-template-areas: "img" "text";
+  margin-top: 10rem;
+  padding: 0 3.8rem;
+  outline: 1px solid purple;
+}
+@media (min-width: 70em) {
+  .landing__files {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    grid-template-areas: "text img";
+    margin-top: 9rem;
+    padding: 0 8rem;
+  }
+}/*# sourceMappingURL=access.css.map */
