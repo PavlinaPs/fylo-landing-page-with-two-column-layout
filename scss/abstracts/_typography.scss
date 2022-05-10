@@ -1,10 +1,13 @@
 // Headings, Call-to-actions, Header Navigation
-$ff-headings: 'Raleway', sans-serif;
+$ff-headings: "Raleway", sans-serif;
 // body
-$ff-body: 'Open Sans', sans-serif;
+$ff-body: "Open Sans", sans-serif;
 
 $fw-regular: 400;
+$fw-semiBold: 600;
 $fw-bold: 700;
+$fw-extraBold: 800;
+$fw-black: 900;
 
 $fs-normal-mobile: 1.4rem;
 $fs-normal-desktop: 1.8rem;
@@ -15,5 +18,21 @@ $fs-nav-desktop: 1.6rem;
 $fs-h1-mobile: 2.35rem;
 $fs-h1-desktop: 4rem;
 
+$fs-h2-mobile: 1.6rem;
+$fs-h2-desktop: 4rem;
+
 $fs-placeholder-mobile: 1.3rem;
 $fs-placeholder-desktop: 1.5rem;
+
+$fs-productive-text-desktop: 1.65rem;
+
+$fs-green-link: 1.2rem;
+$fs-green-link-desktop: 1.5rem;
+
+$fs-testimonial-mobile: 1.05rem;
+$fs-testimonial-desktop: 1.3rem;
+
+$fs-testimonial-name-mobile: 1rem;
+
+$fs-testimonial-desc-mobile: 0.7rem;
+

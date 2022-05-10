@@ -256,6 +256,250 @@ body {
   display: block;
 }
 
+.landing__productive {
+  margin-top: 9rem;
+  outline: 1px solid orangered;
+}
+@media (min-width: 70em) {
+  .landing__productive {
+    margin-top: 15.5rem;
+  }
+}
+
+.landing__curve--mobile {
+  width: 100%;
+}
+@media (min-width: 70em) {
+  .landing__curve--mobile {
+    display: none;
+  }
+}
+
+.landing__curve--desktop {
+  display: none;
+  width: 100%;
+}
+@media (min-width: 70em) {
+  .landing__curve--desktop {
+    display: block;
+  }
+}
+
+.landing__container {
+  margin-top: -0.5rem;
+  padding-bottom: 3.5rem;
+  background-color: #f6f6fe;
+}
+@media (min-width: 70em) {
+  .landing__container {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: center;
+    gap: 0rem;
+    grid-template-areas: "text img" "testimonial img";
+    margin-top: 0;
+    padding: 10rem 8rem;
+  }
+}
+
+.productive__img {
+  grid-area: img;
+  width: 100%;
+  margin-top: 4.1rem;
+  padding: 0 2.6rem;
+}
+@media (min-width: 70em) {
+  .productive__img {
+    align-self: start;
+    margin-top: -1rem;
+    padding: 0 0 0 3.5rem;
+  }
+}
+
+.productive__text-container {
+  margin-top: 8rem;
+  grid-area: text;
+}
+@media (min-width: 70em) {
+  .productive__text-container {
+    margin-top: -4rem;
+  }
+}
+
+.productive__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.55;
+}
+@media (min-width: 70em) {
+  .productive__title {
+    font-size: 4rem;
+    line-height: auto;
+    text-align: left;
+  }
+}
+
+.productive__text1,
+.productive__text2 {
+  padding: 0 3rem 0 2rem;
+  line-height: 1.5;
+  text-align: left;
+}
+@media (min-width: 70em) {
+  .productive__text1,
+.productive__text2 {
+    margin-top: 1.6rem;
+    padding: 0 14rem 0 0;
+    font-size: 1.65rem;
+    line-height: 1.4;
+    text-align: left;
+  }
+}
+
+.productive__text1 {
+  margin-top: 2.2rem;
+}
+@media (min-width: 70em) {
+  .productive__text1 {
+    margin-top: 2.85rem;
+  }
+}
+
+.productive__text2 {
+  margin-top: 1.6rem;
+}
+
+.productive__link {
+  margin-top: 3.3rem;
+  color: hsl(170deg, 45%, 43%);
+  text-align: center;
+}
+@media (min-width: 70em) {
+  .productive__link {
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+}
+.productive__link:hover a {
+  color: hsl(168deg, 45%, 75%);
+  border-bottom: 0.1rem solid hsl(168deg, 45%, 75%);
+}
+.productive__link:hover .productive__arrow {
+  display: none;
+}
+.productive__link:hover .productive__arrow--hover {
+  display: inline-block;
+}
+
+.productive__link a {
+  padding: 0.5rem 0;
+  color: hsl(170deg, 45%, 43%);
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-bottom: 0.1rem solid hsl(170deg, 45%, 43%);
+}
+@media (min-width: 70em) {
+  .productive__link a {
+    font-size: 1.5rem;
+  }
+}
+.productive__link a .productive__arrow,
+.productive__link a .productive__arrow--hover {
+  vertical-align: text-bottom;
+  padding-left: 0.4rem;
+}
+.productive__link a .productive__arrow--hover {
+  display: none;
+}
+
+.productive__testimonial {
+  grid-area: testimonial;
+  max-width: 40rem;
+  max-height: 16.9rem;
+  margin: 4.7rem;
+  padding: 2.1rem 1.3rem 2.1rem 2.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.7;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem hsla(0deg, 0%, 0%, 0.2);
+}
+@media (min-width: 70em) {
+  .productive__testimonial {
+    max-width: none;
+    width: 35.5rem;
+    max-height: none;
+    height: 21.25rem;
+    margin: 4.9rem 0 0.5rem 0;
+    padding: 2.4rem 4rem 0 3.4rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 70em) {
+  .testimonial__img {
+    width: 5%;
+    aspect-ratio: 1;
+  }
+}
+
+.testimonial__text {
+  margin-top: 0.1rem;
+}
+@media (min-width: 70em) {
+  .testimonial__text {
+    margin-top: 0.3rem;
+    line-height: 1.75;
+  }
+}
+
+.testimonial__info {
+  margin-top: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+@media (min-width: 70em) {
+  .testimonial__info {
+    margin-top: 1.5rem;
+  }
+}
+
+.testimonial__avatar {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+}
+@media (min-width: 70em) {
+  .testimonial__avatar {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
+
+.testimonial__user {
+  padding-top: 0.1rem;
+}
+
+.testimonial__name {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.testimonial__description {
+  margin-top: -0.2rem;
+  font-size: 0.7rem;
+  color: hsl(243deg, 87%, 32%);
+}
+@media (min-width: 70em) {
+  .testimonial__description {
+    margin-top: 0.1rem;
+  }
+}
+
 .attribution {
   margin: 1rem 0;
   font-size: 1.1rem;
