@@ -657,6 +657,136 @@ body {
   display: block;
 }
 
+.landing__footer {
+  padding: 6.5rem 4rem 4.7rem;
+  font-size: 1.6rem;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(243deg, 87%, 12%);
+}
+@media (min-width: 70em) {
+  .landing__footer {
+    padding: 10.9rem 8.4rem 7.6rem;
+  }
+}
+
+.footer__logo {
+  width: 60%;
+}
+@media (min-width: 70em) {
+  .footer__logo {
+    width: 14%;
+  }
+}
+
+.footer__text-container {
+  margin-top: 3.5rem;
+}
+@media (min-width: 70em) {
+  .footer__text-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1.8rem;
+  }
+}
+
+.footer__contact--phone,
+.footer__contact--email {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.footer__contact--phone > img {
+  width: 1.8rem;
+  height: 1.8rem;
+  margin: 0 0.1rem;
+}
+
+.footer__contact--email {
+  margin-top: 1.8rem;
+}
+
+.footer__contact--email > img {
+  width: 2rem;
+  height: 1.6rem;
+}
+
+.footer__links {
+  margin-top: 5.7rem;
+}
+@media (min-width: 70em) {
+  .footer__links {
+    margin-top: 0;
+  }
+}
+.footer__links li {
+  margin-top: 1.55rem;
+}
+.footer__links li:first-child {
+  margin-top: 0;
+}
+
+@media (min-width: 70em) {
+  .footer__links:nth-child(2) {
+    padding-left: 22rem;
+  }
+}
+
+.footer__links:nth-child(3) {
+  margin-top: 4.9rem;
+}
+@media (min-width: 70em) {
+  .footer__links:nth-child(3) {
+    margin-top: 0;
+    padding-left: 20.3rem;
+  }
+}
+
+.footer__links a {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 5.2rem;
+}
+@media (min-width: 70em) {
+  .footer__socials {
+    gap: 1.3rem;
+    margin-top: 0rem;
+    padding-left: 18.5rem;
+  }
+}
+
+.footer__socials li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  border: 0.1rem solid hsl(0deg, 0%, 100%);
+}
+@media (min-width: 70em) {
+  .footer__socials li {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
+.footer__socials li:hover, .footer__socials li:focus {
+  border: 1px solid hsl(224deg, 93%, 58%);
+}
+.footer__socials li:hover i, .footer__socials li:focus i {
+  color: hsl(224deg, 93%, 58%);
+}
+
+.footer__socials i {
+  font-size: 1.4rem;
+  color: hsl(0deg, 0%, 100%);
+}
+
 .attribution {
   margin: 1rem 0;
   font-size: 1.1rem;

@@ -1,0 +1,133 @@
+@use '../abstracts' as *;
+
+.landing__footer {
+    padding: 6.5rem 4rem 4.7rem;
+    font-size: $fs-contacts-mobile;
+    color: $clr-white;
+    background-color: $clr-very-dark-blue;
+
+    @media (min-width: $desktop) {
+        padding: 10.9rem 8.4rem 7.6rem;
+    }
+}
+
+.footer__logo {
+    width: 60%;
+
+    @media (min-width: $desktop) {
+        width: 14%;
+    }
+}
+
+// text container
+.footer__text-container {
+    margin-top: 3.5rem;
+
+    @media (min-width: $desktop) {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 1.8rem;
+    }
+}
+
+// phone & email
+.footer__contact--phone,
+.footer__contact--email {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+}
+
+.footer__contact--phone > img {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 0 0.1rem;
+}
+
+.footer__contact--email {
+    margin-top: 1.8rem;
+}
+
+.footer__contact--email > img {
+    width: 2rem;
+    height: 1.6rem;
+}
+
+// footer links lists
+.footer__links {
+    margin-top: 5.7rem;
+
+    @media (min-width: $desktop) {
+        margin-top: 0;
+    }
+
+    & li {
+        margin-top: 1.55rem;
+    }
+
+    & li:first-child {
+        margin-top: 0;
+    }
+}
+
+.footer__links:nth-child(2) {
+    @media (min-width: $desktop) {
+        padding-left: 22rem;
+    }
+}
+
+.footer__links:nth-child(3) {
+    margin-top: 4.9rem;
+
+    @media (min-width: $desktop) {
+        margin-top: 0;
+        padding-left: 20.3rem;
+    }
+}
+
+.footer__links a {
+    color: $clr-white;
+}
+
+// socials
+.footer__socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 5.2rem;
+
+    @media (min-width: $desktop) {
+        gap: 1.3rem;
+        margin-top: 0rem;
+        padding-left: 18.5rem;
+    }
+}
+
+.footer__socials li {
+    @include flex-center;
+    
+    width: 2.7rem;
+    height: 2.7rem;
+    border-radius: 50%;
+    border: 0.1rem solid $clr-white;
+
+    @media (min-width: $desktop) {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    &:hover,
+    &:focus {
+        border: 1px solid $clr-bright-blue;
+
+        & i {
+            color: $clr-bright-blue;
+        }
+    }
+}
+
+.footer__socials i {
+    font-size: $fs-normal-mobile;
+    color: $clr-white;
+}
+
