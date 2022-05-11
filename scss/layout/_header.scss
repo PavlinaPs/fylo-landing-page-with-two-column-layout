@@ -7,8 +7,6 @@
     margin-top: 2.3rem;
     padding: 0 2.3rem 0 2.5rem;
 
-    outline: 1px solid yellow;
-
     @media (min-width: $desktop) {
         margin-top: 6.2rem;
         padding: 0 7.7rem 0 8.2rem;
@@ -32,10 +30,14 @@
     font-family: $ff-headings;
     font-size: $fs-nav-mobile;
     font-weight: $fw-bold;
-
+    
     @media (min-width: $desktop) {
         gap: 5.5rem;
         margin-top: 0.2rem;
         font-size: $fs-nav-desktop;
     }
+}
+
+.navigation__link {
+    color: $clr-very-dark-blue;
 }

@@ -1,48 +1,39 @@
-// Headings, Call-to-actions, Header Navigation
+// font family for Headings, Call-to-actions, Header Navigation
 $ff-headings: "Raleway", sans-serif;
-// body
+
+// font family body
 $ff-body: "Open Sans", sans-serif;
 
+// font weight
 $fw-regular: 400;
 $fw-semiBold: 600;
 $fw-bold: 700;
 $fw-extraBold: 800;
 $fw-black: 900;
 
+// font size mobile
 $fs-normal-mobile: 1.4rem;
-$fs-normal-desktop: 1.8rem;
-
 $fs-nav-mobile: 1.2rem;
-$fs-nav-desktop: 1.6rem;
-
 $fs-h1-mobile: 2.35rem;
-$fs-h1-desktop: 4rem;
-
 $fs-h2-mobile: 1.6rem;
-$fs-h2-desktop: 4rem;
-
 $fs-placeholder-mobile: 1.3rem;
-$fs-placeholder-desktop: 1.5rem;
-
-$fs-productive-text-desktop: 1.65rem;
-
-$fs-green-link: 1.2rem;
-$fs-green-link-desktop: 1.5rem;
-
+$fs-green-link-mobile: 1.2rem;
 $fs-testimonial-mobile: 1.05rem;
-$fs-testimonial-desktop: 1.3rem;
-
 $fs-testimonial-name-mobile: 1rem;
-
 $fs-testimonial-desc-mobile: 0.7rem;
-
 $fs-h2-access-mobile: 1.8rem;
+$fs-placeholder-access-mobile: 1.1rem;
+$fs-error-access-mobile: 1.1rem;
+$fs-contacts-mobile: 1.6rem;
+
+// font size desktop
+$fs-normal-desktop: 1.8rem;
+$fs-nav-desktop: 1.6rem;
+$fs-h1-desktop: 4rem;
+$fs-placeholder-desktop: 1.5rem;
+$fs-productive-text-desktop: 1.65rem;
+$fs-green-link-desktop: 1.5rem;
+$fs-testimonial-desktop: 1.3rem;
 $fs-h2-access-desktop: 3.1rem;
-
-$fs-placeholder-access-mobile: 1rem;
-
+$fs-placeholder-access-desktop: 1.3rem;
 $fs-access-button-desktop: 1.4rem;
-
-$fs-contacts-mobile: 1.6rem;
-$fs-contacts-mobile: 1.6rem;
-

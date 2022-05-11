@@ -13,6 +13,7 @@
 
 .footer__logo {
     width: 60%;
+    max-width: 20rem;
 
     @media (min-width: $desktop) {
         width: 14%;
@@ -24,9 +25,9 @@
     margin-top: 3.5rem;
 
     @media (min-width: $desktop) {
-        display: flex;
-        justify-content: flex-start;
         margin-top: 1.8rem;
+        display: grid;
+        grid-template-columns: 34.7% 21.3% 20.5% 23.5%;
     }
 }
 
@@ -72,7 +73,6 @@
 
 .footer__links:nth-child(2) {
     @media (min-width: $desktop) {
-        padding-left: 22rem;
     }
 }
 
@@ -81,25 +81,27 @@
 
     @media (min-width: $desktop) {
         margin-top: 0;
-        padding-left: 20.3rem;
     }
 }
 
 .footer__links a {
     color: $clr-white;
+
+    &:hover,
+    &:focus {
+    color: $clr-bright-blue;
+    }
 }
 
 // socials
 .footer__socials {
     display: flex;
-    justify-content: center;
     gap: 1rem;
     margin-top: 5.2rem;
 
     @media (min-width: $desktop) {
         gap: 1.3rem;
         margin-top: 0rem;
-        padding-left: 18.5rem;
     }
 }
 

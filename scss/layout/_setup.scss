@@ -14,10 +14,9 @@ body {
 }
 
 .landing {
-    width: 37.5rem;
-    outline: 1px solid red;
+    //width: 37.5rem;
 
     @media (min-width: $desktop) {
-        width: 144rem;
+        max-width: 144rem;
     }
 }

@@ -2,7 +2,6 @@
 
 .landing__access {
     padding: 5.5rem 4.5rem 7rem;
-    color: $clr-white;
     background-color: $clr-desaturated-blue;
 
     @media (min-width: $desktop) {
@@ -13,7 +12,7 @@
            'text form'; 
         align-items: center;
         margin-top: 0rem;
-        padding: 5.4rem 8.4rem 8.5rem;
+        padding: 5.4rem 8.4rem 4.2rem;
     }
 }
 
@@ -21,6 +20,7 @@
      @media (min-width: $desktop) {
          grid-area: text;
          margin-top: 5rem;
+         padding-bottom: 2rem;
     }
  }
 
@@ -28,6 +28,7 @@
     font-family: $ff-headings;
     font-size: $fs-h2-access-mobile;
     font-weight: $fw-bold;
+    color: $clr-white;
     text-align: center;
 
     @media (min-width: $desktop) {
@@ -38,29 +39,30 @@
 
 .access__text {
     margin-top: 1.8rem;
+    color: $clr-white-a;
     line-height: 1.5;
     text-align: center;
 
     @media (min-width: $desktop) {
-        margin-top: 2.2rem;
+        margin-top: 2.4rem;
         padding-right: 14rem;
         line-height: 1.35;
         text-align: left;
     }
 }
 
+// email sign-up
 .access__form-container {
-    position: relative;
-    margin-top: 2.3rem;
+    margin: 2.3rem auto 0;
     padding: 0 2.1rem;
+    max-width: 30rem;
 
     @media (min-width: $desktop) {
         grid-area: form;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        margin-top: 4.2rem;
+        margin-top: 5.8rem;
         padding: 0 7.5rem 0 1.5rem;
+        height: 17rem;
+        max-width: none;
     }
 }
 
@@ -68,11 +70,13 @@
     width: 100%;
     height: 3.4rem;
     padding-left: 0.8rem;
+    font-size: $fs-placeholder-access-mobile;
     border: 0.1rem solid $clr-desaturated-blue-border;
     border-radius: 0.2rem;
 
     @media (min-width: $desktop) {
-        height: 5.2rem;
+        height: 5rem;
+        font-size: $fs-placeholder-access-desktop;
         padding-left: 2rem;
         border-radius: 0.5rem;
     }
@@ -82,17 +86,19 @@
 .access__email:active {
     outline: none;
     border: 0.1rem solid $clr-very-dark-blue;
+    font-size: $fs-placeholder-access-mobile;
+
+    @media (min-width: $desktop) {
+        font-size: $fs-placeholder-access-desktop;
+    }
 }
 
 .access__email::placeholder {
-    
     color: $clr-light-gray;
-    // vertical align 
-    transform: scale(0.7);
-    transform-origin: 0% 50%;
-    
+    font-size: $fs-placeholder-access-mobile;
+
     @media (min-width: $desktop) {
-        //font-size: $fs-placeholder-desktop;
+        font-size: $fs-placeholder-access-desktop;
     }
 }
 
@@ -112,8 +118,8 @@
 
     @media (min-width: $desktop) {
         width: 20rem;
-        height: 4.8rem;
-        margin-top: 0;
+        height: 4.7rem;
+        margin-top: 1.6rem;
         font-size: $fs-access-button-desktop;
         border-radius: 0.3rem;
     }
@@ -121,20 +127,26 @@
 
 .access__submit:hover,
 .access__submit:focus {
+    outline: none;
     background-color: $clr-bright-blue-hover;
     border: 0.1rem solid $clr-bright-blue-hover;
 }
 
+// email validation error
 .access__error {
     display: none;
-    margin-top: 0.5rem;
-    font-weight: $fw-bold;
-    color: $clr-error;
+    margin-top: 0.3rem;
+    font-size: $fs-error-access-mobile;
+    font-weight: $fw-regular;
+    color: $clr-white-a;
 
     @media (min-width: $desktop) {
-        position: absolute;
-        top: 4.3rem;
-        left: 0;
+        // position: absolute;
+        // top: 5rem;
+        // left: 1.5rem;
+        // margin-bottom: 3rem;
+        font-size: $fs-placeholder-access-desktop;
+        font-weight: $fw-regular;
     }
 }
 
@@ -144,4 +156,8 @@
 
 .access__form-container.error .access__error {
     display: block;
+    //font-weight: $fw-semiBold;
 }
+//FIXME:
+// .access__form-container.error .access__submit {
+//     margin-top: 1.7rem;
