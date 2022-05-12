@@ -77,7 +77,7 @@
 
   @media (min-width: $desktop) {
     font-size: $fs-h1-desktop;
-    line-height: auto;
+    line-height: normal;
     text-align: left;
   }
 }
@@ -184,7 +184,7 @@
 .testimonial__img {
   @media (min-width: $desktop) {
     width: 5%;
-    aspect-ratio: 1;
+    height: 5%;
   }
 }
 

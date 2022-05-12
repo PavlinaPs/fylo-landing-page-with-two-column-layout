@@ -335,7 +335,7 @@ body {
 @media (min-width: 55em) {
   .productive__title {
     font-size: 4rem;
-    line-height: auto;
+    line-height: normal;
     text-align: left;
   }
 }
@@ -442,7 +442,7 @@ body {
 @media (min-width: 55em) {
   .testimonial__img {
     width: 5%;
-    aspect-ratio: 1;
+    height: 5%;
   }
 }
 
